@@ -1,0 +1,12 @@
+.main-menu {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  a {
+    color: var(--color-aquarius-900);
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 700;
+  }
+}

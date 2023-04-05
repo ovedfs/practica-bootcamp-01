@@ -1,0 +1,74 @@
+// Container
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+// Flexbox
+.d-flex {
+  display: flex;
+}
+
+.justify-content-space-beetwen {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+// Active element
+.active {
+  color: var(--color-aquarius-600) !important;
+}
+
+// Paddings
+@for $i from 0 through 16 {
+  .p-#{$i} { padding: 4px * $i; }
+  .py-#{$i} { 
+    padding-top: 4px * $i;
+    padding-bottom: 4px * $i;
+  }
+  .px-#{$i} { 
+    padding-left: 4px * $i;
+    padding-right: 4px * $i;
+  }
+}
+
+// Headings
+.heading-xl {
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 63px;
+}
+
+.heading-lg {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 52px;
+}
+
+// Widths
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-33 {
+  width: 33.33%;
+}
+
+.w-25 {
+  width: 25%;
+}

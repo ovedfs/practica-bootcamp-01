@@ -1,0 +1,17 @@
+.btn {
+  padding: 0.5em;
+  border: none;
+  color: var(--color-white);
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.btn-primary {
+  background-color: var(--color-aquarius-600);
+}
+
+.btn-secondary {
+  background-color: var(--color-black-pearl-900);
+}

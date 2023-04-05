@@ -51,3 +51,22 @@ body {
 npm run dev
 ````
 - Ingresamos a la url que genera vite http://127.0.0.1:5173/
+
+- Si todo funciona bien podemos de una vez inicializar un **repositorio**
+````bash
+> git init
+> git status
+````
+
+- Agregamos un archivo llamado **.gitignore** y en el ponemos los elementos que no se deben agregar al repositorio
+````
+node_modules
+package-lock.json
+````
+- Ahora si agregamos todo al repositorio
+````bash
+> git add .
+> git status
+> git commit -m "Configuración inicial de un Projecto de Javascript con Vite y SASS"
+````
+- Listo! Nuestro proyecto ya tiene la configuración necesaria para empezar la maquetación 😎
