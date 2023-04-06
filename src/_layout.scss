@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     gap: 1em;
-    margin-top: 1em;
+    padding: 1em;
 
     a {
       background-color: var(--color-aquarius-600);
@@ -35,4 +35,48 @@
 .tags {
   display: flex;
   gap: 1em;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.blog-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+
+  nav {
+    overflow: hidden;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    overflow: auto;
+
+    a {
+      color: var(--color-black-pearl-900);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+
+  @include tools.desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

@@ -1,0 +1,77 @@
+@use '../tools';
+
+.post {
+  background-color: var(--color-white);
+  padding: 1em;
+  box-shadow: 0px 6px 16px rgba(27, 91, 100, 0.25);
+
+  img {
+    width: 100%;
+  }
+}
+
+.post:nth-child(4n) {
+  
+  @include tools.desktop {
+    background-color: var(--color-aquarius-100);
+    grid-column: 1 / 4;
+    display: flex;
+    gap: 1em;
+
+    .tag {
+      background-color: #B5DBF5;
+    }
+  }
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+
+  h3 {
+    color: var(--color-black-pearl-900);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+  }
+
+  p {
+    color: var(--color-black-pearl-700);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  span {
+    color: var(--color-black-pearl-900);
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+.post-time-lecture {
+  color: var(--color-black-pearl-400);
+  font-size: 13px;
+}
