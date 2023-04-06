@@ -1,3 +1,5 @@
+@use 'tools';
+
 .main-menu {
   display: flex;
   align-items: center;
@@ -9,4 +11,28 @@
     line-height: 19px;
     font-weight: 700;
   }
+}
+
+.slider {
+  .slide-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+
+    a {
+      background-color: var(--color-aquarius-600);
+      color: var(--color-white);
+      padding: 0.75em 1em;
+    }
+
+    @include tools.desktop {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.tags {
+  display: flex;
+  gap: 1em;
 }
